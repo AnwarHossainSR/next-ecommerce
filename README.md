@@ -1,8 +1,8 @@
-# Nextflix using Next.js
+# Ecommerce using Next.js
 
 ## About
 
-Simple Netflix clone with [Next.js](https://nextjs.org/), [Hasura GraphQL](https://hasura.io/) and [Magic](https://magic.link/).
+Simple Ecommerce APP with [Next.js](https://nextjs.org/), [Mongodb](https://www.mongodb.com/).
 
 ## 1. Getting Started
 
