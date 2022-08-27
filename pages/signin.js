@@ -1,13 +1,13 @@
 //import Cookie from "js-cookie";
-import Head from "next/head";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useContext, useEffect, useState } from "react";
+import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 //import { DataContext } from "../store/GlobalState";
 //import { postData } from "../utils/fetchData";
 
 const Signin = () => {
-  const initialState = { email: "", password: "" };
+  const initialState = { email: '', password: '' };
   const [userData, setUserData] = useState(initialState);
   const { email, password } = userData;
 
@@ -58,45 +58,45 @@ const Signin = () => {
       </Head>
 
       <form
-        className="mx-auto my-4"
-        style={{ maxWidth: "500px" }}
+        className='mx-auto my-4'
+        style={{ maxWidth: '500px' }}
         onSubmit={handleSubmit}
       >
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
+        <div className='form-group'>
+          <label htmlFor='exampleInputEmail1'>Email address</label>
           <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            name="email"
+            type='email'
+            className='form-control'
+            id='exampleInputEmail1'
+            aria-describedby='emailHelp'
+            name='email'
             value={email}
             onChange={handleChangeInput}
           />
-          <small id="emailHelp" className="form-text text-muted">
+          <small id='emailHelp' className='form-text text-muted'>
             We will never share your email with anyone else.
           </small>
         </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputPassword1">Password</label>
+        <div className='form-group'>
+          <label htmlFor='exampleInputPassword1'>Password</label>
           <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            name="password"
+            type='password'
+            className='form-control'
+            id='exampleInputPassword1'
+            name='password'
             value={password}
             onChange={handleChangeInput}
           />
         </div>
 
-        <button type="submit" className="btn btn-dark w-100">
+        <button type='submit' className='btn btn-dark w-100'>
           Login
         </button>
 
-        <p className="my-2">
-          You do not have an account?{" "}
-          <Link href="/register">
-            <a style={{ color: "crimson" }}>Register Now</a>
+        <p className='my-2'>
+          You do not have an account?{' '}
+          <Link href='/register'>
+            <a style={{ color: 'crimson' }}>Register Now</a>
           </Link>
         </p>
       </form>
