@@ -1,10 +1,10 @@
-//import Cookie from "js-cookie";
+// import Cookie from "js-cookie";
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-//import { DataContext } from "../store/GlobalState";
-//import { postData } from "../utils/fetchData";
+import {useRouter} from 'next/router';
+import {useState} from 'react';
+// import { DataContext } from "../store/GlobalState";
+// import { postData } from "../utils/fetchData";
 
 const Signin = () => {
   const initialState = { email: '', password: '' };

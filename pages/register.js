@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-//import { DataContext } from "../store/GlobalState";
-//import { postData } from "../utils/fetchData";
-//import valid from '../utils/valid';
+import {useRouter} from 'next/router';
+import {useState} from 'react';
+// import { DataContext } from "../store/GlobalState";
+// import { postData } from "../utils/fetchData";
+// import valid from '../utils/valid';
 
 const Register = () => {
   const initialState = { name: '', email: '', password: '', cf_password: '' };
