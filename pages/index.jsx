@@ -23,6 +23,12 @@ function Home() {
           ))
         )}
       </div>
+      <button
+        className='btn btn-outline-info d-block mx-auto mb-4'
+        //onClick={handleLoadmore}
+      >
+        Load more
+      </button>
     </div>
   );
 }
