@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 
 function NavBar() {
   const router = useRouter();
@@ -8,30 +8,30 @@ function NavBar() {
 
   const isActive = (r) => {
     if (r === router.pathname) {
-      return ' active';
+      return " active";
     } else {
-      return '';
+      return "";
     }
   };
   useEffect(() => {
-    setfirstLogin(localStorage.getItem('firstLogin'));
+    setfirstLogin(localStorage.getItem("firstLogin"));
   }, [firstLogin]);
 
   const handleLogout = () => {
-    console.log('logout');
+    console.log("logout");
   };
 
   const adminRouter = () => {
     return (
       <>
-        <Link href='/users'>
-          <a className='dropdown-item'>Users</a>
+        <Link href="/users">
+          <a className="dropdown-item">Users</a>
         </Link>
-        <Link href='/create'>
-          <a className='dropdown-item'>Products</a>
+        <Link href="/create">
+          <a className="dropdown-item">Products</a>
         </Link>
-        <Link href='/categories'>
-          <a className='dropdown-item'>Categories</a>
+        <Link href="/categories">
+          <a className="dropdown-item">Categories</a>
         </Link>
       </>
     );
@@ -79,43 +79,43 @@ function NavBar() {
   //   };
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-      <Link href='/'>
-        <a className='navbar-brand'>Anwar</a>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link href="/">
+        <a className="navbar-brand">Anwar</a>
       </Link>
       <button
-        className='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarNavDropdown'
-        aria-controls='navbarNavDropdown'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <span className='navbar-toggler-icon'></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
       <div
-        className='collapse navbar-collapse justify-content-end'
-        id='navbarNavDropdown'
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNavDropdown"
       >
-        <ul className='navbar-nav p-1'>
-          <li className='nav-item'>
-            <Link href='/cart'>
-              <a className={'nav-link' + isActive('/cart')}>
+        <ul className="navbar-nav p-1">
+          <li className="nav-item">
+            <Link href="/cart">
+              <a className={"nav-link" + isActive("/cart")}>
                 <i
-                  className='fas fa-shopping-cart position-relative'
-                  aria-hidden='true'
+                  className="fas fa-shopping-cart position-relative"
+                  aria-hidden="true"
                 >
                   <span
-                    className='position-absolute'
+                    className="position-absolute"
                     style={{
-                      padding: '3px 6px',
-                      background: '#ed143dc2',
-                      borderRadius: '50%',
-                      top: '-10px',
-                      right: '-10px',
-                      color: 'white',
-                      fontSize: '14px',
+                      padding: "3px 6px",
+                      background: "#ed143dc2",
+                      borderRadius: "50%",
+                      top: "-10px",
+                      right: "-10px",
+                      color: "white",
+                      fontSize: "14px",
                     }}
                   >
                     2
@@ -124,10 +124,10 @@ function NavBar() {
               </a>
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link href='/signin'>
-              <a className={'nav-link' + isActive('/signin')}>
-                <i className='fas fa-user' aria-hidden='true'></i> Sign in
+          <li className="nav-item">
+            <Link href="/signin">
+              <a className={"nav-link" + isActive("/signin")}>
+                <i className="fas fa-user" aria-hidden="true"></i> Sign in
               </a>
             </Link>
           </li>
